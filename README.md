@@ -185,7 +185,7 @@ ansible -m ping all -u ansible --ask-pass -i inventory.ini
 
 - Now, let's install apache web server on the slave server. 
 ```console
-ansible all  -m yum -a "name=httpd state=present" -u ansible --ask-pass --become
+ansible all  -m yum -a "name=httpd state=present" -u ansible --ask-pass --become -i inventory.ini
 
 ```
 
